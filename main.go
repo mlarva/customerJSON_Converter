@@ -38,8 +38,8 @@ func main() {
 		}
 
 		customer.ID = record[0]
-		customer.CustomerName = record[1]
-		customer.CustomerKey = record[2]
+		customer.CustomerKey = record[1]
+		customer.CustomerName = record[2]
 		customer.OEStartDate, err = convertStringUnixToTime(record[3])
 		if err != nil {
 			fmt.Println(err)
